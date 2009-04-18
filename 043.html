@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>043</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "042.pl" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "044" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+
+                                YAML2
+     
+     use YAML-XS;
+     
+     $clone = Load Dump $yaml;
+     
+     $object = yaml-&gt;load($yaml);
+     
+     $yaml = yaml(%options)-&gt;dump($object);
+
+
+
+
+
+
+</pre>
+</body>
+</pre>

@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>035</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "034.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "036" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>     * STREAM_START
+     * DOCUMENT_START
+     * MAPPING_START
+     * SCALAR value="foo"
+     * SEQUENCE_START anchor="list"
+     * SCALAR value="hello"
+     * SCALAR value="world"
+     * SEQUENCE_END
+     * SCALAR value="bar"
+     * ALIAS anchor="list"
+     * MAPPING_END
+     * DOCUMENT_END
+     * DOCUMENT_START
+     * SCALAR value="Goodbye"
+     * DOCUMENT_END
+     * STREAM_END
+
+
+</pre>
+</body>
+</pre>

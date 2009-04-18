@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>033</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "032" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "034.yaml" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+                     Streaming API - YAML Events
+     
+     * STREAM_START
+     * STREAM_END
+     * DOCUMENT_START
+     * DOCUMENT_END
+     * MAPPING_START
+     * MAPPING_END
+     * SEQUENCE_START
+     * SEQUENCE_END
+     * SCALAR
+     * ALIAS
+
+
+
+
+</pre>
+</body>
+</pre>

@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>021.yaml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "020.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "022.yaml" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+    # Sequence in Sequence
+    ---
+    - 
+      -
+        - 1
+        - 2
+    - 3
+    ---
+    - - - 1
+        - 2
+    - 3
+
+
+
+
+
+</pre>
+</body>
+</pre>

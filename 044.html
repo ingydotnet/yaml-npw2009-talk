@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>044</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "043" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "045" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+                          No more Global UI
+     
+     * YAML was modeled after Data::Dumper originally.
+     * Global variable configuration is a really bad idea.
+     * Moreso for YAML.
+     
+         use YAML;
+         $YAML::Indent = 4;
+         Dump($object);
+     
+         yaml(indent =&gt; 4)-&gt;dump($object);
+     
+         # Streaming API
+         yaml-&gt;emit(yaml-&gt;parse($yaml));
+
+
+
+</pre>
+</body>
+</pre>

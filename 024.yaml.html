@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>024.yaml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "023.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "025.yaml" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+
+
+    # Roll Your Own Implicits
+    --- !diceRolls
+    - 3d4
+    - 1d1
+    - !roll '6d5'
+    - !roll
+      one: 2
+      two: 5
+
+
+
+
+
+
+</pre>
+</body>
+</pre>

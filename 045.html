@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>045</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "044" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "046" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>                          YAML2 Transition
+     
+     * YAML.pm moved to YAML::Old
+     * YAML2 *dist* installs YAML *module*
+     * With lots of warnings
+       * VERY EXPERIMENTAL
+       * WARNING- ***INGY CODE!!!***
+     * YAML2 proxies to the appropriate
+       YAML implementation module.
+     * When stable, make YAML2 into real YAML.pm.
+     
+       use YAML;
+       use YAML-Old;
+       use YAML '-Old';
+       use YAML-XS,-Perl;
+
+
+
+</pre>
+</body>
+</pre>

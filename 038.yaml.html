@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>038.yaml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "037" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "039.yaml" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+    # META.yml
+    name: Module-Build
+    abstract: Build and install Perl modules
+    version: 0.20
+    author:
+      - Ken Williams &lt;kwilliams@cpan.org&gt;
+    license: perl
+    distribution_type: module
+    requires:
+      IO::File: 0
+      perl: 5.005_03
+    recommends:
+      Archive::Tar: 1.00
+    generated_by: Module::Build version 0.20
+
+
+
+</pre>
+</body>
+</pre>

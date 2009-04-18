@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>025.yaml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "024.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "026" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>  # Quick YAML Vocabulary Lesson for Mongers
+  - directive:  %YAML or %TAG line
+  - stream:     A complete (to eof) YAML file
+  - document:   A single top level object
+  - mapping:    A hash (ref)
+  - sequence:   An array (ref)
+  - collection: A map or seq
+  - scalar:     A scalar
+  - node:       A map, seq or scalar
+  - anchor:     A label of a node
+  - alias:      A reference to a anchored node
+  - block:      Indented scoping
+  - flow:       Curly/Square scoping
+  - literal:    HEREDOC
+  - dump:       Perl to YAML
+  - load:       YAML to PERL
+
+
+</pre>
+</body>
+</pre>

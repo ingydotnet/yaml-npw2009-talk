@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>036z</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "036b" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "037" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+            Schema - The Meaning of YAML - The Grey Zone
+     
+     Q: How do you know what a random YAML document means?
+     A: You don't!
+     
+     * YAML meaning is context sensitive
+     * It is a contract between a Loader and a Dumper
+     * It is a contract between two developers
+     * It is validated by a test system
+     * The contract does not (yet) have a formal standard
+     * YAML will someday have a formal schema language
+       * Y-OK and Rx are attempts
+     * For now it is a programmer understanding
+     * Backed by good tests, when needed
+
+
+
+</pre>
+</body>
+</pre>

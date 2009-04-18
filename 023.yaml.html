@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>023.yaml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "022.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "024.yaml" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+
+
+
+    # Anchors and Aliases
+    left hand: &amp;veryHeavySword
+      name: The Bastard Sword of Eowyn
+      weight: 30
+    right hand: *veryHeavySword
+
+
+
+
+
+
+
+
+</pre>
+</body>
+</pre>

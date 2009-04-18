@@ -1,0 +1,52 @@
+<pre><html>
+<head>
+<title>042.pl</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "041" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "043" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>     use YAML::Perl::Events;
+     use YAML::Perl::Emitter;
+     
+     my $emitter = YAML::Perl::Emitter-&gt;new();
+     $emitter-&gt;open();
+     
+     for (qw(
+         YAML::Perl::Event::StreamStart
+         YAML::Perl::Event::DocumentStart
+         YAML::Perl::Event::MappingStart
+         YAML::Perl::Event::Scalar,foo
+         YAML::Perl::Event::Scalar,42
+         YAML::Perl::Event::Scalar,bar
+         YAML::Perl::Event::Scalar,44
+         YAML::Perl::Event::MappingEnd
+         YAML::Perl::Event::DocumentEnd
+         YAML::Perl::Event::StreamEnd
+     )) {
+         my ($class, $value) = split ',';
+         my $event = defined($value)
+             ? $class-&gt;new(value =&gt; $value)
+             : $class-&gt;new();
+         $emitter-&gt;emit($event);
+     }
+     
+     print ${$emitter-&gt;writer-&gt;stream-&gt;buffer};
+</pre>
+</body>
+</pre>

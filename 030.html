@@ -1,0 +1,44 @@
+<pre><html>
+<head>
+<title>030</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+function navigate(e) {
+    console
+    var keynum = (window.event) // IE
+        ? e.keyCode
+        : e.which;
+    if (keynum == 8) {
+        window.location = "029z.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 32) {
+        window.location = "031" + ".html";
+        return false;
+    }
+    return true;
+}
+</script>
+</head>
+<body onkeypress="return navigate(event)">
+<pre>
+
+
+  What is the difference between the YAML Model and the JSON Model?
+     
+     * JSON only supports arrays and string-keyed-maps
+     
+     * YAML adds data references/pointers
+     ** Allows cyclic data
+     * YAML adds an extensible type system
+     ** All nodes are typed
+     ** Usually implicitly
+
+
+
+
+
+
+</pre>
+</body>
+</pre>
