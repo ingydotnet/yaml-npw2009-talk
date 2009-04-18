@@ -1,4 +1,4 @@
-<pre><html>
+<html>
 <head>
 <title>035</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,8 +12,12 @@ function navigate(e) {
         window.location = "034.yaml" + ".html";
         return false;
     }
-    if (keynum == 32) {
+    if (keynum == 13 || keynum == 32) {
         window.location = "036" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
         return false;
     }
     return true;
@@ -24,21 +28,20 @@ function navigate(e) {
 <pre>     * STREAM_START
      * DOCUMENT_START
      * MAPPING_START
-     * SCALAR value="foo"
-     * SEQUENCE_START anchor="list"
-     * SCALAR value="hello"
-     * SCALAR value="world"
+     * SCALAR value=&quot;foo&quot;
+     * SEQUENCE_START anchor=&quot;list&quot;
+     * SCALAR value=&quot;hello&quot;
+     * SCALAR value=&quot;world&quot;
      * SEQUENCE_END
-     * SCALAR value="bar"
-     * ALIAS anchor="list"
+     * SCALAR value=&quot;bar&quot;
+     * ALIAS anchor=&quot;list&quot;
      * MAPPING_END
      * DOCUMENT_END
      * DOCUMENT_START
-     * SCALAR value="Goodbye"
+     * SCALAR value=&quot;Goodbye&quot;
      * DOCUMENT_END
      * STREAM_END
 
 
 </pre>
 </body>
-</pre>

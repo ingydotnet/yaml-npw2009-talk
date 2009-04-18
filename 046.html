@@ -1,4 +1,4 @@
-<pre><html>
+<html>
 <head>
 <title>046</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,8 +12,12 @@ function navigate(e) {
         window.location = "045" + ".html";
         return false;
     }
-    if (keynum == 32) {
+    if (keynum == 13 || keynum == 32) {
         window.location = "047" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
         return false;
     }
     return true;
@@ -30,7 +34,7 @@ function navigate(e) {
      
      * YAML 1.2 Spec to be finalized by 1 May 2009
      * Ingy Presents YAML @ OSCON
-       * YAML serves "The O'Reilly Languages"
+       * YAML serves &quot;The O'Reilly Languages&quot;
      * Ingy working on a YAML Book
 
 
@@ -41,4 +45,3 @@ function navigate(e) {
 
 </pre>
 </body>
-</pre>

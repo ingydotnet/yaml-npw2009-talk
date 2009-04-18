@@ -1,4 +1,4 @@
-<pre><html>
+<html>
 <head>
 <title>029z.yaml</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,8 +12,12 @@ function navigate(e) {
         window.location = "029f.yaml" + ".html";
         return false;
     }
-    if (keynum == 32) {
+    if (keynum == 13 || keynum == 32) {
         window.location = "030" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
         return false;
     }
     return true;
@@ -33,7 +37,7 @@ function navigate(e) {
       - sequences
       - of data
     plus: scalars
-    mix in: !type "of data"
+    mix in: !type &quot;of data&quot;
     references: *to_the_past
     ...
 
@@ -41,4 +45,3 @@ function navigate(e) {
 
 </pre>
 </body>
-</pre>

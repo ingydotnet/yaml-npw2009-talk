@@ -1,4 +1,4 @@
-<pre><html>
+<html>
 <head>
 <title>049</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,6 +10,10 @@ function navigate(e) {
         : e.which;
     if (keynum == 8) {
         window.location = "048" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
         return false;
     }
     return true;
@@ -37,4 +41,3 @@ function navigate(e) {
 
 </pre>
 </body>
-</pre>

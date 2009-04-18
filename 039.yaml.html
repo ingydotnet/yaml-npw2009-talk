@@ -1,4 +1,4 @@
-<pre><html>
+<html>
 <head>
 <title>039.yaml</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,8 +12,12 @@ function navigate(e) {
         window.location = "038.yaml" + ".html";
         return false;
     }
-    if (keynum == 32) {
+    if (keynum == 13 || keynum == 32) {
         window.location = "040.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
         return false;
     }
     return true;
@@ -36,9 +40,8 @@ function navigate(e) {
             }
       - slide: add features
         parts:
-          - slide: !Code has age =&gt; ( isa =&gt; "Int" );
+          - slide: !Code has age =&gt; ( isa =&gt; &quot;Int&quot; );
 
 
 </pre>
 </body>
-</pre>

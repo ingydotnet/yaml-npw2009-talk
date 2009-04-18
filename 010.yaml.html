@@ -1,4 +1,4 @@
-<pre><html>
+<html>
 <head>
 <title>010.yaml</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,8 +12,12 @@ function navigate(e) {
         window.location = "009.pl" + ".html";
         return false;
     }
-    if (keynum == 32) {
+    if (keynum == 13 || keynum == 32) {
         window.location = "011.yaml" + ".html";
+        return false;
+    }
+    if (keynum == 73 || keynum == 105) {
+        window.location = "index.html";
         return false;
     }
     return true;
@@ -26,7 +30,7 @@ function navigate(e) {
     
     plain: this is subject to implicit typing
     single: 'won''t be subject to implicit typing'
-    double: "can contain \"Any Value\" \n\x7c\u206e"
+    double: &quot;can contain \&quot;Any Value\&quot; \n\x7c\u206e&quot;
     literal: |
         \  /   /\    |\    /| |
          \/   /  \   | \  / | |
@@ -41,4 +45,3 @@ function navigate(e) {
 
 </pre>
 </body>
-</pre>
